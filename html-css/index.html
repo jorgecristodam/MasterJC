@@ -2,11 +2,11 @@
 <html lang="es">
 
 <head>
-    <meta charset="Utf-8">
-    <meta name "viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Jorge Cristóbal | Desarollador Aplicaciones Multiplataforma</title>
+    <title>Jorge Cristóbal | Desarrollador Aplicaciones Multiplataforma</title>
     <meta name="description"
         content="Porfolio de Jorge Cristóbal, desarollador aplicaciones multiplataforma especializado en Java, Kotlin. ¡Contáctame!">
     <meta name="author" content=" Jorge Cristóbal">
@@ -42,7 +42,7 @@
                     <h2>Desarollador Aplicaciones Multiplataforma</h2>
                     <p>Futuro desarrollador terminando mi 2º año de Grado Superior (DAM), me encanta la programacion y
                         estoy
-                        buscando mi primera oporunidad como profersional en este mundo</p>
+                        buscando mi primera oporunidad como profesional en este mundo</p>
                     <a href="#contacto">Contactar</a>
                 </div>
             </div>
@@ -73,72 +73,90 @@
                     locales (SMR).</li>
                 <li><strong>Herramientas y Ofimática:</strong> Microsoft Office (Excel, Word), Git, VS Code.</li>
             </ul>
+        </section>
 
 
-            <section id="experiencia">
+        <section id="experiencia">
 
-                <h2>Experiencia Profesional</h2>
+            <h2>Experiencia Profesional</h2>
 
-                <div class="contenido-experiencia">
-                    <h3>Mozo de Almacén</h3>
-                    <h4>Amazon</h4>
-                    <p class="fecha-experiencia"> Junio 2024 - Actualidad</p>
-                    <ul>
-                        <li><strong>Operaciones y Logística:</strong> Recepción, clasificación y preparación de pedidos
-                        </li>
-                    </ul>
-                </div>
+            <div class="contenido-experiencia">
+                <h3>Mozo de Almacén</h3>
+                <h4>Amazon</h4>
+                <p class="fecha-experiencia"> Junio 2024 - Actualidad</p>
+                <ul>
+                    <li><strong>Operaciones y Logística:</strong> Recepción, clasificación y preparación de pedidos
+                    </li>
+                </ul>
+            </div>
 
-                <div class="contenido-experiencia">
-                    <h3>Técnico de Soporte Informático (Prácticas FCT)</h3>
-                    <h4>Servicios Móviles Integrados Centrales, S.L. | Hospital Ramón y Cajal</h4>
-                    <p class="fecha-experiencia"> Septiembre 2024 - Enero 2025</p>
+            <div class="contenido-experiencia">
+                <h3>Técnico de Soporte Informático (Prácticas FCT)</h3>
+                <h4>Servicios Móviles Integrados Centrales, S.L. | Hospital Ramón y Cajal</h4>
+                <p class="fecha-experiencia"> Septiembre 2024 - Enero 2025</p>
 
-                    <ul>
-                        <li><strong>Soporte y Hardware</strong>Mantenimiento, configuración y resolución de incidencias
-                            en
-                            equipos informáticos, impresoras y periféricos del entorno hospitalario.</li>
-                        <li><strong>Software y Aplicaiones Medicas:</strong>instalación y gestión de sistemas operativos
-                            y
-                            software del ambito médico</li>
-                    </ul>
+                <ul>
+                    <li><strong>Soporte y Hardware</strong> Mantenimiento, configuración y resolución de incidencias
+                        en
+                        equipos informáticos, impresoras y periféricos del entorno hospitalario.</li>
+                    <li><strong>Software y Aplicaiones Medicas:</strong> instalación y gestión de sistemas operativos
+                        y
+                        software del ambito médico</li>
+                </ul>
 
-                </div>
+            </div>
 
-            </section>
+        </section>
 
 
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <div class="contacto-contenido">
-                    <p>Actualmente me encuentro desarrollando mis primeros proyectos personales para poner en práctica
-                        todo
-                        lo aprendido en DAM. ¡Pronto los iré subiendo a mi repositorio!</p>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-contenido">
+                <p>Si buscas un perfil junior con ganas de trabajar o quieres hablar sobre algún proyecto, ¡no dudes en escribirme!</p>
 
-                    <p>Si buscas un perfil junior con ganas de trabajar, no dudes en escribirme. Aquí tienes mis
-                        enlaces:
-                    </p>
+                <form id="form-contacto" action="#" method="POST" class="formulario-contacto">
+                    <div class="campo-form">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
 
-                    <ul class="lista-contacto">
-                        <li>
-                            <strong>Email:</strong>
-                            <a href="mailto:jorgecristodam@gmail.com">jorgecristodam@gmail.com</a>
-                        </li>
-                        <li>
-                            <strong>LinkedIn:</strong>
-                            <a href="www.linkedin.com/in/jorge-cristobal-gomez-176ab5440" target="_blank"
-                                rel="noopener">Mi
-                                Perfil de LinkedIn</a>
-                        </li>
-                        <li>
-                            <strong>GitHub:</strong>
-                            <a href="https://github.com/jorgecristodam" target="_blank" rel="noopener">Mi Repositorio
-                                (En
-                                construcción)</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                    <div class="campo-form">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="asunto">Asunto (Cabecera del correo)</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="mensaje">Mensaje (Cuerpo del correo)</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+
+                <ul class="lista-contacto">
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:jorgecristodam@gmail.com">jorgecristodam@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/jorge-cristobal-gomez-176ab5440" target="_blank" rel="noopener">Mi
+                            Perfil de LinkedIn</a>
+                    </li>
+                    <li>
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/jorgecristodam" target="_blank" rel="noopener">Mi Repositorio
+                            (En
+                            construcción)</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
     </main>
 
