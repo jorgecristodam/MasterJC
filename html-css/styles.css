@@ -124,5 +124,184 @@ nav a:hover {
     border-color: var(--color-secundario);
 }
 
+#inicio{
+    padding-top: 80px;
+}
+
+.perfil-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.foto-perfil {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-secundario);
+    box-shadow: var(--sombra);
+}
+ 
+.info-inicio h1 {
+    font-size: 2.4rem;
+    color: var(--color-primario);
+    line-height: 1.2;
+}
+ 
+.info-inicio h2 {
+    font-size: 1.3rem;
+    color: var(--color-secundario-oscuro);
+    margin: 8px 0 16px;
+}
+ 
+.info-inicio p {
+    color: var(--color-texto-suave);
+    margin-bottom: 24px;
+}
+
+.info-inicio a {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+ 
+.info-inicio a:hover {
+    background-color: var(--color-secundario-oscuro);
+    transform: translateY(-2px);
+}
+
+.contenido-sobre-mi {
+    background-color: var(--color-tarjeta);
+    padding: 25px 30px;
+    border-radius: var(--radio);
+    border-left: 5px solid var(--color-secundario);
+    box-shadow: var(--sombra);
+}
+
+#sobre-mi h3{
+    color: var(--color-primario);
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-list li{
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: var(--color-tarjeta);
+    padding: 20px;
+    border-radius: var(--radio);
+    border-top: 4px solid var(--color-secundario);
+    box-shadow: var(--sombra);
+    font-size: 0.95rem;
+    transition: transform 0.3s;
+}
+
+.skills-list li:hover{
+    transform: translate(-5px);
+}
+
+.skills-list strong {
+    display: block;
+    color: var(--color-primario);
+    margin-bottom: 6px;
+}
+
+#experiencia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+#experiencia > h2 {
+    grid-column: 1 / -1;
+}
+ 
+.contenido-experiencia {
+    background-color: var(--color-tarjeta);
+    padding: 25px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+ 
+.contenido-experiencia h3 {
+    color: var(--color-primario);
+    font-size: 1.15rem;
+}
+ 
+.contenido-experiencia h4 {
+    color: var(--color-secundario-oscuro);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+ 
+.fecha-experiencia {
+    color: var(--color-texto-suave);
+    font-size: 0.85rem;
+    margin: 4px 0 12px;
+}
+ 
+.contenido-experiencia li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    padding-left: 18px;
+    position: relative;
+}
+ 
+.contenido-experiencia li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--color-secundario);
+}
+
+.contacto-contenido {
+    max-width: 650px;
+    margin: 0 auto;
+}
+ 
+.contacto-contenido > p {
+    text-align: center;
+    color: var(--color-texto-suave);
+    margin-bottom: 30px;
+}
+
+.formulario-contacto {
+    background-color: var(--color-tarjeta);
+    padding: 30px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+ 
+.campo-form {
+    margin-bottom: 18px;
+}
+ 
+.campo-form label {
+    display: block;
+    font-weight: 600;
+    color: var(--color-primario);
+    margin-bottom: 6px;
+}
+ 
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    background-color: var(--color-fondo);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+ 
 
  
