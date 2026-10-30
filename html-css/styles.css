@@ -5,26 +5,26 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; 
+    scroll-padding-top: 80px;
 }
- 
+
 ul {
     list-style: none;
 }
- 
+
 a {
     text-decoration: none;
     color: inherit;
 }
- 
+
 img {
     max-width: 100%;
     display: block;
 }
- 
+
 button,
 input,
 textarea {
@@ -33,7 +33,7 @@ textarea {
 
 :root {
 
-    --color-primario: #1e3a5f;   
+    --color-primario: #1e3a5f;
 
     --color-secundario: #14b8a6;
 
@@ -65,20 +65,20 @@ body {
     line-height: 1.6;
 }
 
-main{
+main {
     max-width: var(--ancho-max);
     margin: 0 auto;
     padding: 0 20px;
 }
 
-section > h2{
-    color:var(--color-primario);
+section>h2 {
+    color: var(--color-primario);
     font-size: 2rem;
     margin-top: 30px;
     text-align: center;
 }
 
-section > h2::after{
+section>h2::after {
     content: "";
     display: block;
     width: 60px;
@@ -88,7 +88,7 @@ section > h2::after{
     border-radius: 2px;
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -102,13 +102,13 @@ header{
     padding: 15px 40px;
 }
 
-.logo{
+.logo {
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 25px;
 }
@@ -118,13 +118,13 @@ nav a {
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s, color 0.3s;
 }
- 
+
 nav a:hover {
     color: var(--color-secundario);
     border-color: var(--color-secundario);
 }
 
-#inicio{
+#inicio {
     padding-top: 80px;
 }
 
@@ -142,19 +142,19 @@ nav a:hover {
     border: 5px solid var(--color-secundario);
     box-shadow: var(--sombra);
 }
- 
+
 .info-inicio h1 {
     font-size: 2.4rem;
     color: var(--color-primario);
     line-height: 1.2;
 }
- 
+
 .info-inicio h2 {
     font-size: 1.3rem;
     color: var(--color-secundario-oscuro);
     margin: 8px 0 16px;
 }
- 
+
 .info-inicio p {
     color: var(--color-texto-suave);
     margin-bottom: 24px;
@@ -169,7 +169,7 @@ nav a:hover {
     font-weight: 600;
     transition: background-color 0.3s, transform 0.2s;
 }
- 
+
 .info-inicio a:hover {
     background-color: var(--color-secundario-oscuro);
     transform: translateY(-2px);
@@ -183,19 +183,19 @@ nav a:hover {
     box-shadow: var(--sombra);
 }
 
-#sobre-mi h3{
+#sobre-mi h3 {
     color: var(--color-primario);
     margin: 40px 0 20px;
     text-align: center;
 }
 
-.skills-list{
+.skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.skills-list li{
+.skills-list li {
     flex: 1 1 calc(33.333% - 20px);
     background-color: var(--color-tarjeta);
     padding: 20px;
@@ -206,7 +206,7 @@ nav a:hover {
     transition: transform 0.3s;
 }
 
-.skills-list li:hover{
+.skills-list li:hover {
     transform: translate(-5px);
 }
 
@@ -222,41 +222,41 @@ nav a:hover {
     gap: 25px;
 }
 
-#experiencia > h2 {
+#experiencia>h2 {
     grid-column: 1 / -1;
 }
- 
+
 .contenido-experiencia {
     background-color: var(--color-tarjeta);
     padding: 25px;
     border-radius: var(--radio);
     box-shadow: var(--sombra);
 }
- 
+
 .contenido-experiencia h3 {
     color: var(--color-primario);
     font-size: 1.15rem;
 }
- 
+
 .contenido-experiencia h4 {
     color: var(--color-secundario-oscuro);
     font-size: 0.95rem;
     font-weight: 600;
 }
- 
+
 .fecha-experiencia {
     color: var(--color-texto-suave);
     font-size: 0.85rem;
     margin: 4px 0 12px;
 }
- 
+
 .contenido-experiencia li {
     font-size: 0.95rem;
     margin-bottom: 8px;
     padding-left: 18px;
     position: relative;
 }
- 
+
 .contenido-experiencia li::before {
     content: "▸";
     position: absolute;
@@ -268,8 +268,8 @@ nav a:hover {
     max-width: 650px;
     margin: 0 auto;
 }
- 
-.contacto-contenido > p {
+
+.contacto-contenido>p {
     text-align: center;
     color: var(--color-texto-suave);
     margin-bottom: 30px;
@@ -281,18 +281,18 @@ nav a:hover {
     border-radius: var(--radio);
     box-shadow: var(--sombra);
 }
- 
+
 .campo-form {
     margin-bottom: 18px;
 }
- 
+
 .campo-form label {
     display: block;
     font-weight: 600;
     color: var(--color-primario);
     margin-bottom: 6px;
 }
- 
+
 .campo-form input,
 .campo-form textarea {
     width: 100%;
@@ -302,6 +302,111 @@ nav a:hover {
     background-color: var(--color-fondo);
     transition: border-color 0.3s, box-shadow 0.3s;
 }
- 
 
- 
+.campo-form input:focus,
+.campo-form textarea:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+}
+
+.campo-form textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--color-primario);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-secundario);
+}
+
+.lista-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 35px;
+    margin-top: 30px;
+}
+
+.lista-contacto a {
+    color: var(--color-secundario-oscuro);
+    font-weight: 600;
+}
+
+.lista-contacto a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--color-primario);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 900px) {
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .perfil-container {
+        gap: 30px;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* Header y menú en columna */
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.perfil-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-inicio h1 {
+    font-size: 1.9rem;
+}
+
+/* Grids a una sola columna */
+.skills-list,
+#experiencia {
+    grid-template-columns: 1fr;
+}
+
+section {
+    padding: 40px 0;
+}
+
+html {
+    scroll-padding-top: 130px;
+}
